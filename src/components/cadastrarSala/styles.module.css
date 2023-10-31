@@ -1,14 +1,16 @@
 .cadastro{
     display: flex;
     background-color: rgb(255, 255, 255);
+    padding: 0.5px;
 
 }
 
 .form {
     overflow: hidden;
     width: 500px;
-    padding: 20px;
+    padding: 10px;
     background-color: rgb(222, 222, 222);
+    border: 1px solid black;
 }
 .pgn{
     text-align: center;
@@ -21,7 +23,7 @@
 .select{
     display: flex;
     padding: .7em;
-    width: 460px;
+    width: 479px;
     height: 1.5rem;
     border: none;
     color: white;

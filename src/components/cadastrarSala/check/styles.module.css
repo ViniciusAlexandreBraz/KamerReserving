@@ -1,0 +1,5 @@
+.checkbox{
+    display: flex;
+    padding: 1vh 0;
+    gap: .2vw;
+}

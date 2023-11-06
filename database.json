@@ -1,0 +1,42 @@
+{
+  "salas": [
+    {
+      "descricao": "aula",
+      "solicitante": "vinao",
+      "sala": "",
+      "inicio": "2023-11-09T15:07",
+      "fim": "2023-11-06T17:09",
+      "id": 1
+    },
+    {
+      "descricao": "fofofo",
+      "solicitante": "fkfkfk",
+      "sala": "",
+      "inicio": "2023-11-18T15:36",
+      "fim": "2023-11-04T15:35",
+      "id": 3
+    },
+    {
+      "descricao": "alaoal",
+      "solicitante": "Vinisisisi",
+      "sala": "",
+      "inicio": "2023-11-17T15:44",
+      "fim": "2023-11-03T17:45",
+      "id": 4
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Bloco A - Lab. de Informática 1"
+    },
+    {
+      "id": 2,
+      "name": "Bloco A - Lab. de Informática 2"
+    },
+    {
+      "id": 3,
+      "name": "Bloco A - Lab. de Informática 3"
+    }
+  ]
+}

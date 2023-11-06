@@ -8,10 +8,8 @@
 .form_control input {
     padding: .7em;
     height: 1.5rem;
-    border: none;
-    color: white;
+    border: 1px solid black;
     font-size: 15px;
-    background-color: rgb(41, 40, 40);
 }
 
 .form_control input::placeholder {

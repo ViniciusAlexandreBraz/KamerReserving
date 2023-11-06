@@ -1,0 +1,25 @@
+.tabela {
+    width: 50%;
+    margin: 2vh 0;
+}
+
+.tabela table {
+    margin: 3vh 0;
+    border-collapse: collapse;
+}
+
+.tabela th {
+    padding: 10px;
+    text-align: center;
+    background: linear-gradient(0deg, rgb(182, 182, 182) 0%, rgb(0, 51, 255)  100%);
+    color: #FFFFFF;
+    border: 1px solid #000000;
+}
+
+.tabela td {
+    padding: 10px;
+
+    text-align: center;
+    color: #000000;
+    border: 1px solid #000000;
+}

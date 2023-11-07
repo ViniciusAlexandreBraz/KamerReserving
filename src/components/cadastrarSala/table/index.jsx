@@ -20,9 +20,13 @@ export default function Tabela() {
 
     return (
         <div className={styles.tabela}>
-            <h1>
-                Reservas feitas:
-            </h1>
+
+           <div className={styles.title}>
+                <img src="date.png" alt="date" />
+                <h1>
+                    Reservas realizadas: {salas.length}
+                </h1>
+            </div>
             <table>
                 <thead>
                     <tr>
@@ -35,13 +39,13 @@ export default function Tabela() {
                 </thead>
                 <tbody>
                     {salas.map((salas) => (
-                    <tr key={salas.id}>
-                        <td>{salas.descricao}</td>
-                        <td>{salas.solicitante}</td>
-                        <td>{salas.sala}</td>
-                        <td>{salas.inicio}</td>
-                        <td>{salas.fim}</td>
-                    </tr>
+                        <tr key={salas.id}>
+                            <td>{salas.descricao}</td>
+                            <td>{salas.solicitante}</td>
+                            <td>{salas.category?.name}</td>
+                            <td>{salas.inicio}</td>
+                            <td>{salas.fim}</td>
+                        </tr>
                     ))}
                 </tbody>
             </table>

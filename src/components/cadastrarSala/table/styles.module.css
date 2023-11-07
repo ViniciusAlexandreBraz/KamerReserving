@@ -1,8 +1,17 @@
 .tabela {
-    width: 50%;
+    width: 100%;
     margin: 2vh 0;
 }
-
+.title{
+    margin-top: 2vh;
+    margin-left: 1rem;
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    gap: 5px;
+}
 .tabela table {
     margin: 3vh 0;
     border-collapse: collapse;
@@ -17,9 +26,13 @@
 }
 
 .tabela td {
-    padding: 10px;
-
+    padding: 5px;
     text-align: center;
     color: #000000;
     border: 1px solid #000000;
+}
+
+.tabela tr:hover {
+   background-color: rgb(255, 255, 0);
+   cursor: pointer;
 }

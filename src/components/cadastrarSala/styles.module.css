@@ -3,6 +3,8 @@
     flex-direction: column;
     justify-content: center;
     margin: 2vh;
+    border: 1px solid gray;
+    background-color: rgb(243, 243, 243);
 }
 
 .form h1 {

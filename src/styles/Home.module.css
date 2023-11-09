@@ -1,11 +1,14 @@
 .form {
     width: 30%;
+
 }
 .home {
     display: flex;
     margin: 2vh;
+
 }
 
 .tabela {
     width: 70%;
+
 }

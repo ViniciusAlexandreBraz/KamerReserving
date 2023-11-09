@@ -10,7 +10,8 @@
     flex-direction: row;
     align-items: center;
     text-align: center;
-    gap: 5px;
+    gap: 10px;
+
 }
 .tabela table {
     margin: 3vh 0;
@@ -26,13 +27,13 @@
 }
 
 .tabela td {
-    padding: 5px;
+    padding: 10px;
     text-align: center;
     color: #000000;
     border: 1px solid #000000;
 }
 
 .tabela tr:hover {
-   background-color: rgb(255, 255, 0);
+    background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(119, 119, 119)  100%);
    cursor: pointer;
 }

@@ -6,7 +6,7 @@ import styles from '@/styles/Home.module.css'
 
 export default function Home() {
   return (
-    <div>
+    <div className={styles.imagem}>
       <div className={styles.home}>
         <div className={styles.form}>
           <Formulario btnText="Reservar Sala" />

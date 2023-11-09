@@ -1,6 +1,6 @@
 import Input from '@/components/cadastrarSala/input/index'
 import Label from '@/components/cadastrarSala/label/index'
-import { toast } from 'react-toastify';
+import Message from '../cadastrarSala/msg'
 import TextArea from '../cadastrarSala/textArea'
 import styles from './styles.module.css'
 import Select from '../cadastrarSala/select'
@@ -23,8 +23,10 @@ export default function Formulario({ btnText }) {
         fim: '',
     })
 
+    const [message, setMessage] = useState(null)
+
     useEffect(() => {
-        axios.get('http://localhost:3001/categories')
+        axios.get('http://localhost:3001/Sala')
             .then((response) => {
                 setCategories(response.data)
             })
@@ -48,8 +50,21 @@ export default function Formulario({ btnText }) {
         e.preventDefault()
         console.log(salas)
 
+        if (!isFormReady()) {
+            setMessage({ type: 'error', text: 'Preencha os campos' });
+            return;
+        }
+
         if (!termos) {
+            setMessage({ type: 'error', text: 'aceite os termos' });
             console.log('Aceite os termos')
+            return;
+        }
+
+
+        if (salas.inicio > salas.fim) {
+            setMessage({ type: 'error', text: 'Não pode ter conflito de datas' });
+            setSalas((prevSalas) => ({ ...prevSalas, inicio: '', fim: '' })); 
             return;
         }
 
@@ -71,17 +86,47 @@ export default function Formulario({ btnText }) {
                 console.log(erro)
 
             });
+
+            axios.post('http://localhost:3001/salas', salas)
+            .then((response) => {
+                setMessage({ type: 'success', text: 'Agendamento com sucesso!' });
+                console.log(response.data)
+                limparCampos();
+
+                setTimeout(() => {
+                    window.location.reload();
+                }, 3000);
+
+
+            })
+            .catch((err) => {
+                setMessage({ type: 'error', text: 'erro no seu agendamento.' });
+                console.log(err)
+            })
+
     }
 
     function aceitarTermos(e) {
         setTermos(e.target.checked)
     }
 
+    function isFormReady() {
+        return (
+            salas.descricao.trim() !== '' &&
+            salas.solicitante.trim() !== '' &&
+            salas.inicio.trim() !== '' &&
+            salas.fim.trim() !== '' &&
+            termos
+        )
+    }
 
     return (
         <div>
             <form onSubmit={e => inserirSala(e)} className={styles.form}>
                 <h1>Reservar Sala</h1>
+
+                {message && (
+                    <Message type={message.type} text={message.text} />)}
 
                 <Label
                     htmlFor="nome"

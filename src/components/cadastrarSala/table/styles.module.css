@@ -16,6 +16,8 @@
 .tabela table {
     margin: 3vh 0;
     border-collapse: collapse;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.567);
+
 }
 
 .tabela th {
@@ -24,6 +26,7 @@
     background: linear-gradient(0deg, rgb(182, 182, 182) 0%, rgb(0, 51, 255)  100%);
     color: #FFFFFF;
     border: 1px solid #000000;
+
 }
 
 .tabela td {
@@ -31,6 +34,7 @@
     text-align: center;
     color: #000000;
     border: 1px solid #000000;
+
 }
 
 .tabela tr:hover {

@@ -20,6 +20,28 @@
         "id": "1",
         "name": "Bloco A - Lab. de Informática 1"
       }
+    },
+    {
+      "descricao": "sss",
+      "solicitante": "sx",
+      "inicio": "2023-11-09T19:20",
+      "fim": "2023-11-09T19:20",
+      "category": {
+        "id": "2",
+        "name": "Bloco A - Lab. de Informática 2"
+      },
+      "id": 2
+    },
+    {
+      "descricao": "sss",
+      "solicitante": "sx",
+      "inicio": "2023-11-09T19:20",
+      "fim": "2023-11-09T19:20",
+      "category": {
+        "id": "2",
+        "name": "Bloco A - Lab. de Informática 2"
+      },
+      "id": 3
     }
   ],
   "Sala": [

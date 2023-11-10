@@ -44,7 +44,7 @@ export default function Formulario({ btnText }) {
             }
         });
     }
-    
+
 
     function inserirSala(e) {
         e.preventDefault()
@@ -64,7 +64,7 @@ export default function Formulario({ btnText }) {
 
         if (salas.inicio > salas.fim) {
             setMessage({ type: 'error', text: 'Não pode ter conflito de datas' });
-            setSalas((prevSalas) => ({ ...prevSalas, inicio: '', fim: '' })); 
+            setSalas((prevSalas) => ({ ...prevSalas, inicio: '', fim: '' }));
             return;
         }
 
@@ -87,7 +87,9 @@ export default function Formulario({ btnText }) {
 
             });
 
-            axios.post('http://localhost:3001/salas', salas)
+       
+
+        axios.post('http://localhost:3001/salas', salas)
             .then((response) => {
                 setMessage({ type: 'success', text: 'Agendamento com sucesso!' });
                 console.log(response.data)
@@ -192,7 +194,7 @@ export default function Formulario({ btnText }) {
                     text="concordo com os termos?"
                 />
                 <Button
-                    text={btnText} />
+                    text={btnText} /> 
             </form>
         </div>
     )

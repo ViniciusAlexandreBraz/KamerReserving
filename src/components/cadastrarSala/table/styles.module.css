@@ -1,5 +1,4 @@
 .tabela {
-    width: 100%;
     margin: 2vh 0;
 }
 .title{
@@ -15,6 +14,7 @@
 }
 .tabela table {
     margin: 3vh 0;
+    width: 100%;
     border-collapse: collapse;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.567);
 
@@ -23,9 +23,9 @@
 .tabela th {
     padding: 10px;
     text-align: center;
-    background: linear-gradient(0deg, rgb(182, 182, 182) 0%, rgb(0, 51, 255)  100%);
+    background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(83, 83, 83)  100%);
     color: #FFFFFF;
-    border: 1px solid #000000;
+    border: 1px solid #6f6f6f;
 
 }
 

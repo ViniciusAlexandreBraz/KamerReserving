@@ -9,8 +9,8 @@
 
 .success {
     background-color: #5cb85c;
-    color: white;
-    border: 1px solid black;
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
 
 }
 

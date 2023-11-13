@@ -13,7 +13,7 @@
 }
 
 .form_control input::placeholder {
-    color: rgb(255, 255, 255);
+    color: rgb(75, 74, 74);
 }
 
 .form_control input:focus {

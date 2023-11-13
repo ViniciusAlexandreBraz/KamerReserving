@@ -2,15 +2,18 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 1em;
-    color: rgb(255, 255, 255);
+    
 }
 
 .form_text label { 
+    
     margin-bottom: .6em;
+    
     font-weight: bold;
 }
 
 .form_text textarea {
+    
     padding: .7em;
     height: 2.5rem;
     border: none;

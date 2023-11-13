@@ -3,6 +3,7 @@
     flex-direction: column;
     margin-bottom: 1em;
     color: white;
+
 }
 
 .form_control input {
@@ -20,17 +21,3 @@
     outline: none;
 }
 
-.form_control input[type="file"] {
-    cursor: pointer;
-    border: 1px solid rgb(47, 0, 255);
-}
-
-.form_control input[type="file"]::-webkit-file-upload-button {
-    cursor: pointer;
-    padding: .9em;
-    border-radius: 10px;
-    background-color: rgb(240, 240, 240);
-    color: rgb(0, 0, 0);
-    border: none;
-
-}

@@ -6,19 +6,19 @@
 
 .cabecalho {
     display: flex;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
     justify-content:space-between;
     align-items: center;
     padding: 10px;
-    border: 1px solid rgb(255, 255, 255);
-    box-shadow: 0 4px 8px 0 rgb(255, 255, 255);
+    border: 1px solid rgb(94, 94, 94);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.478);
     min-width: 35rem;
 
 }
 .titulo{
     display: flex;
     font-size: 4vh;
-    color: white;
+    color: rgb(0, 0, 0);
 
 }
 .git{
